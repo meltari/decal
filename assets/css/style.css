@@ -1,0 +1,153 @@
+html { padding:0px; margin: 0px; }
+
+body {
+    background-color: #FFE5E8;
+  }
+
+#content{
+  position: relative;
+  margin-top: 30px;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.title {
+  position: absolute;
+  z-index: 2;
+  margin-left: 100px;
+  top: 60px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  color: #34293B;
+}
+
+
+button {
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  margin: 30px;
+  border-width: 75px;
+  transition: 0.2s;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  opacity: 0.9;
+  color: #34293B;
+}
+
+button:hover {
+  border-width: 25px;
+  cursor: pointer;
+  opacity: 1;
+
+}
+button:focus {
+  outline: none;
+}
+#top{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 415px;
+
+}
+#top button {
+  display: block;
+  background-color: #34293B;
+  color: #FFF9FA;
+  width: 765px;
+  height: 125px;
+  border: none;
+
+}
+#top button:hover{
+  animation: fontGrow 0.2s linear 0s 1;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@keyframes fontGrow {
+  from { font-size: 40px;}
+  to {font-size: 45px;}
+}
+.foodbutton{
+  border-color: #FF6666;
+  background-image: url("food.jpg");
+  background-size: cover;
+}
+
+.workoutsbutton{
+  border-color: #21FF81;
+}
+
+.musicbutton{
+  border-color: #7F7EFF;
+}
+
+
+#motivation {
+  display:none;
+}
+
+#food {
+  position: relative;
+  margin-top: 30px;
+  background-color: #FFE5E8;
+  height: 800px;
+  display: none;
+}
+.meals{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 25%;
+
+}
+
+.breakfast{
+  display: block;
+  position: relative;
+  width: 25%;
+  background-color: white;
+  height: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.lunch{
+  display: block;
+  position: relative;
+  width: 25%;
+  height: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+
+}
+.dinner{
+  display: block;
+  position: relative;
+  width: 25%;
+  height: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.snacks{
+  display: block;
+  position: relative;
+  width: 25%;
+  height: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.foodlist{
+
+}
+#workouts {
+  display: none;
+}
+#music {
+  display: none;
+}
